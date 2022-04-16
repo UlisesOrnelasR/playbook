@@ -1,4 +1,4 @@
-console.log('--------Ejercicio 2---------')
+console.log('******************Ejercicio 2**********************\n')
 console.log('--------Uso de forEach en una lista---------')
 const explorers = [
     {
@@ -60,10 +60,19 @@ const explorers = [
       }
     }
    ];
-
+   console.log('--------Imprimiendo el nombre de cada explorer--------')
    //forEach
    //explorers.forEach(function(explorer){
    //   console.log(explorer.name)
    //})
    // forEach con function arrow
-   explorers.forEach((explorer) => console.log(explorer.name))
+   explorers.forEach((explorer) => console.log(explorer.name));
+
+   console.log('\n-----Imprimiendo el stack de cada explorer usando forEach--------')
+/* explorers.forEach(function(explorer){
+    console.log(`El ${explorer.name} tiene un stack en ${explorer.stack}`)
+   })
+   */
+   // Con function arrow
+   explorers.forEach((explorer) => console.log(`El "${explorer.name}" tiene stacks en ${explorer.stack}`))
+
