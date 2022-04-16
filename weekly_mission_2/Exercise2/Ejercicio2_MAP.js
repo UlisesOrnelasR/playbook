@@ -66,3 +66,13 @@ const explorers = [
     return explorers.stack
    })
    console.log(`los stacks son ${Stacks}`)
+
+   //Obtén la lista de explorers que tengan en su stack "js", usa FILTER (para validar un elsemento en un lista se usa el método includes)
+   console.log('\n********Uso de FILTER**********')
+   const stackJs = explorers.filter(function(explorer){
+       if (explorer.stack == 'js'){
+        return true
+       }
+   })
+   console.log(stackJs)
+
