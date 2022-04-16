@@ -58,23 +58,15 @@ const explorers = [
       }
     }
    ]
-   // Busca el primer explorer que sea de la CDMX, usa FIND
-   console.log('**********EJERCICIO 2***********\n')
-   console.log('**********Uso de Find***********')
-
-   const explorerCDMX = explorers.find(function(explorer){
-    if (explorer.city == 'CDMX'){
-        return true
-    }
-   })
-   console.log(explorerCDMX)
-   
- 
-
-   
 
 
+      // Obtén la suma de todos los exercises_completed, usa REDUCE
+      console.log('**********Ejercicio 2***********\n')
+      console.log('**********Uso de REDUCE***********')
+
+      const sumaExercises = explorers.reduce(function(suma, explorer){
+          return suma += explorer.exercises_completed;
+      }, 0);
+      console.log(`La suma de los ejercicios completados por los explorers es ${sumaExercises}`)
 
 
-
-   
